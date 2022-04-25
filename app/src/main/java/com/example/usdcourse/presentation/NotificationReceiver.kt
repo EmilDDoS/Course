@@ -40,6 +40,7 @@ class NotificationReceiver : BroadcastReceiver() {
         val application = context.applicationContext as Application
         DaggerAppComponent.builder().applicationModule(ApplicationModule(application))
             .build().inject(this)
+        NotificationBuilder(context)
 
         val savedCourse = sharedPrefUseCase.getData()
 
