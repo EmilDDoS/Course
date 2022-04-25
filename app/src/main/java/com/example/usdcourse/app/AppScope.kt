@@ -1,0 +1,7 @@
+package com.example.usdcourse.app
+
+import javax.inject.Scope
+
+@Scope
+@Retention(AnnotationRetention.RUNTIME)
+annotation class AppScope

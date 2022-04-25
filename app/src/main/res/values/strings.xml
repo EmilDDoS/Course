@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">USD course</string>
+    <string name="Date">Дата: </string>
+    <string name="hint_date">01.01.2021</string>
+    <string name="course">Курс: </string>
+    <string name="hint_course">80</string>
+    <string name="save_you_number">Save you number</string>
+    <string name="you_current_course">You current course</string>
+    <string name="enter_number">ENTER</string>
+    <string name="enter_you_number">Enter you number</string>
+    <string name="course_up">Course up</string>
+    <string name="got_to_buy">go to buy</string>
+</resources>
