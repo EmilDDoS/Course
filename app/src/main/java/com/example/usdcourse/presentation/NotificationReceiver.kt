@@ -51,11 +51,13 @@ class NotificationReceiver : BroadcastReceiver() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { it ->
-                val value = it[0].value.replace(",",".")
-                val todayCourse = value.toFloat()
+                if(!it.isNullOrEmpty()) {
+                    val value = it[0].value.replace(",", ".")
+                    val todayCourse = value.toFloat()
 
-                if (todayCourse > savedCourse) {
-                    showNotification(context)
+                    if (todayCourse > savedCourse) {
+                        showNotification(context)
+                    }
                 }
             }
     }
